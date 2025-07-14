@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  computeportal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: computeportal-website
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      # For development, mount source code for hot reloading
+      - ./src:/app/src:ro
+      - ./server:/app/server:ro
+      - ./logo:/app/logo:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/api/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - computeportal-network
+
+  # Development service with nodemon for hot reloading
+  computeportal-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: computeportal-website-dev
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    volumes:
+      - ./src:/app/src
+      - ./server:/app/server
+      - ./logo:/app/logo
+      - /app/node_modules
+    restart: unless-stopped
+    profiles:
+      - dev
+    networks:
+      - computeportal-network
+
+networks:
+  computeportal-network:
+    driver: bridge 
