@@ -1,0 +1,51 @@
+Compute Portal Inc.
+— One Pager
+The Challenge
+Organizations across the globe face a critical shortage of accessible compute power.
+Demand from fields like Artificial Intelligence (AI), Internet of Things (IoT), Web3, and advanced
+analytics is outpacing the capabilities of legacy infrastructure. Traditional solutions—building
+ever-larger hyper-scale data centers—are hindered by:
+●
+Energy grid limitations: Power availability and environmental constraints increasingly
+prevent data center expansion.
+●
+Cost and inefficiency: Scaling conventional infrastructure is capital-intensive and slow
+to respond to dynamic demand.
+●
+Geographic centralization: Most compute is hosted in a few locations, resulting in
+bottlenecks and latency issues for edge applications.
+The Solution
+Compute Portal Inc. is developing an innovative hardware and software platform to unlock
+untapped compute resources:
+●
+●
+●
+Edge Compute Enablement: Our technology transforms edge devices and local nodes
+into powerful, distributable compute resources.
+Alternative Energy Integration: Compute Portal’s systems tap into underutilized and
+renewable energy sources, decoupling compute from legacy grid limitations.
+Seamless Access & Orchestration: Users can discover, provision, and manage
+distributed compute resources via a secure and intuitive interface, lowering costs while
+boosting access and performance.
+Why It Matters
+●
+Enables on-demand compute without dependence on constrained and expensive data
+center real estate.
+●
+●
+Accelerates AI, IoT, and decentralized app deployment by bringing scalable capacity
+where it’s needed most.
+Promotes sustainability by aligning compute infrastructure with flexible, green energy
+sources.
+Meet the Team
+Name Experience & Role
+Jerry V Hall Yoonil Choi Manas
+Dewan
+40+ years in project management and sales. Visionary leader with a track
+record in complex execution.
+25+ years in security, engineering (hardware/software). Deep expertise building
+resilient solutions.
+PhD candidate, 30 years in corporate project management, branding, customer
+experience, and strategy.
+Compute Portal Inc. empowers the future of high-performance computing—everywhere,
+sustainably.
